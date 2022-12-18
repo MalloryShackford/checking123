@@ -1,0 +1,238 @@
+/* @mbshackford | MIT Licensed */
+
+/* Variables */
+
+:root {
+    --cream: rgb(219, 210, 193);
+    --slate-blue-med: rgb(106, 128, 148);
+    --light-slate-blue: rgb(201, 211, 225);
+    --dark-blue: rgb(29,49,82);
+    --deep-green: rgb(6, 44, 52);
+    --background-blue:rgba(18, 103, 139, 0.983);
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Sono', sans-serif;
+    font-size: 16px;
+    color: var(--deep-green);
+    line-height: 1.2;
+    background: linear-gradient(45deg, rgba(45, 129, 141, 0.841), rgba(120, 115, 171, 0.294));
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Kallem';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sono', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--deep-green);
+}
+a:hover {
+    color: var(--slate-blue-med);
+    border-bottom: transparent;
+    cursor: pointer;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}
+hr {
+    margin: .75em;
+}
+
+p{
+    text-align: center;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+/* Hey, Hi, Hello Section */
+.container {
+    text-align: center;
+}
+.img {
+    max-width:30%;
+    margin: 2em 0;
+}
+
+.bold-help {
+    letter-spacing: 2px;;
+    font-weight: bolder;
+    color: rgb(10, 10, 70);
+}
+.bold-help:hover{
+    color: rgba(0, 0, 0, 0.35);
+}
+/* About Me */
+#about {
+    max-width:50%;
+    padding:1.25em;
+} 
+
+@media (max-width: 720px){
+    body {
+        font-size: 1em;
+    }
+    .container{
+        text-align: center;
+    }
+    .container span img {
+        min-width: 20%;
+        max-width: 30%;
+    }
+    .intro {
+        margin-top: 2em;
+        text-align:center;
+    }
+}
+
+/* Projects */
+.carousel-item {
+    text-align: center;
+    width: 80%;
+}
+
+/* Contact Form */
+.form-container {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    width: 100%;
+    
+}
+label {
+    padding: 1em .5em .5em .2em;
+    margin-bottom: .5em;
+}
+input { 
+    width:300px;
+    height:2em;
+    padding-top: .4em;
+    padding-left:.4em;
+    border-radius: 5px;
+    font-family:'Sono', sans-serif;
+}
+
+textarea {
+    padding-top: .5em;
+    padding-left: .5em;
+    width: 300px;
+    height:150px;
+    border-radius: 5px;
+    font-family:'Sono', sans-serif;
+}
+
+
+.btn-form {
+    position: center;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.503);
+    padding: .5em 3em .5em 3em;
+    border-radius: 5px;
+    font-family:'Sono', sans-serif;
+    align-items: center;
+}
+
+.btn-form:hover{
+    background: transparent;
+    
+}
+/* Footer */
+.social {
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+footer .heart{
+    color: rgba(255, 166, 0, 0.795);
+    margin: 0 .25em;
+}
+
+/* Projects */
+
+.tabs {
+    width: 100%;
+}
+.animate.pop:hover {
+    animation-duration: 0.5s;
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  }
+
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+  .img-br {
+    border-radius: 15px;
+  }
+  /* --------  Figure out the hover situation -------- */
+  /* .img-br:hover{
+    opacity: 66;
+  } */
+  
+
+/* Fun Facts Section */
+
+.counter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter h3 {
+    padding: 0.5rem 0;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.counter p {
+    padding-bottom: 1rem;
+    margin: 10px;
+    
+}
+
+@media (max-width: 720px) {
+    .counter h3 {
+        font-size: 1.5rem;
+    }
+
+}
+    
+
+
